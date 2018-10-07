@@ -1,0 +1,33 @@
+.events {
+  width: 1030px;
+  margin: 0 auto;
+}
+
+.events__list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+@media all and (max-width: 1050px) {
+  .events {
+    width: 675px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .events__list {
+    grid-gap: 15px;
+  }
+
+  .events {
+    width: 500px;
+  }
+}
+
+@media all and (max-width: 520px) {
+  .events {
+    width: auto;
+    margin: 0 20px;
+  }
+}

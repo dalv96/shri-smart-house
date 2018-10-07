@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/events.css"/>
+    <link rel="stylesheet" href="css/title.css"/>
+    <link rel="stylesheet" href="css/card.css"/>
+    <link rel="stylesheet" href="css/button.css"/>
+    <link rel="stylesheet" href="css/music.css"/>
+    <script src="js/index.js"></script>
+    <title>Яндекс Дом</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  </head>
+  <body>
+    <div class="layout">
+     <div class="header">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Яндекс Дом">
+        </div>
+        <nav class="navigator">
+          <a href="#" class="navigator__link navigator__link_active">Сводка</a>
+          <a href="#" class="navigator__link">Устройства</a>
+          <a href="#" class="navigator__link">Сценарии</a>
+        </nav>
+        <div class="menu">
+          <input id="switcher" type="checkbox">
+          <label class="burger" for="switcher">
+            <label for="switcher" class="burger__item"></label>
+            <label for="switcher" class="burger__item"></label>
+            <label for="switcher" class="burger__item"></label>
+          </label>
+          <nav class="list">
+            <a href="#" class="list__link">Сводка</a>
+            <a href="#" class="list__link">Устройства</a>
+            <a href="#" class="list__link">Сценарии</a>
+          </nav>
+        </div>
+      </div>
+      <div class="events">
+        <h1 class="title title_size_l">Лента событий</h1>
+        <div class="events__list">
+          <div class="card card_size_l">
+            <div class="card__close">
+              <img src="images/icons/cross.svg" alt="">
+            </div>
+            <div class="card__open">
+              <img src="images/icons/next.svg" alt="">
+            </div>
+            <div class="card__head">
+              <div class="card__title">
+                <div class="card__icon">
+                  <img src="images/icons/stats.svg" alt="График">
+                </div>
+                <div class="card__name">Еженедельный отчет по расходам ресурсов</div>
+              </div>
+              <div class="card__info">
+                <div class="card__device">Сенсоры потребления</div>
+                <div class="card__date">19:00, Сегодня</div>
+              </div>
+            </div>
+            <div class="card__body">
+                <div class="card__text">Так держать! За последнюю неделю вы потратили на 10% меньше ресурсов, чем неделей ранее.</div>
+                <div class="card__optional">
+                  <img class="large-picture" src="images/chart.png" alt="Статистика">
+                </div>
+            </div>
+          </div>
+          <div class="card card_size_s">
+            <div class="card__close">
+              <img src="images/icons/cross.svg" alt="">
+            </div>
+            <div class="card__open">
+              <img src="images/icons/next.svg" alt="">
+            </div>
+            <div class="card__head">
+              <div class="card__title">
+                <div class="card__icon">
+                    <img src="images/icons/key.svg" alt="Ключ">
+                </div>
+                <div class="card__name">Дверь открыта</div>
+              </div>
+              <div class="card__info">
+                <div class="card__device">Сенсор входной двери</div>
+                <div class="card__date">18:50, Сегодня</div>
+              </div>
+            </div>
+          </div>
+          <div class="card card_size_s">
+            <div class="card__close">
+              <img src="images/icons/cross.svg" alt="">
+            </div>
+            <div class="card__open">
+              <img src="images/icons/next.svg" alt="">
+            </div>
+            <div class="card__head">
+              <div class="card__title">
+                <div class="card__icon">
+                  <img src="images/icons/robot-cleaner.svg" alt="Пылесос">
+                </div>
+                <div class="card__name">Уброка закончена</div>
+              </div>
+              <div class="card__info">
+                <div class="card__device">Пылесос</div>
+                <div class="card__date">18:45, Сегодня</div>
+              </div>
+            </div>
+          </div>
+          <div class="card card_size_s">
+            <div class="card__close">
+              <img src="images/icons/cross.svg" alt="">
+            </div>
+            <div class="card__open">
+              <img src="images/icons/next.svg" alt="">
+            </div>
+            <div class="card__head">
+              <div class="card__title">
+                <div class="card__icon">
+                  <img src="images/icons/router.svg" alt="Роутер">
+                </div>
+                <div class="card__name">Новый пользователь</div>
+              </div>
+              <div class="card__info">
+                <div class="card__device">Роутер</div>
+                <div class="card__date">18:45, Сегодня</div>
+              </div>
+            </div>
+          </div>
+          <div class="card card_size_m">
+            <div class="card__close">
+              <img src="images/icons/cross.svg" alt="">
+            </div>
+            <div class="card__open">
+              <img src="images/icons/next.svg" alt="">
+            </div>
+              <div class="card__head">
+                <div class="card__title">
+                  <div class="card__icon">
+                    <img src="images/icons/thermal.svg" alt="Климат">
+                  </div>
+                  <div class="card__name">Изменен климатический режим</div>
+                </div>
+                <div class="card__info">
+                  <div class="card__device">Сенсор микроклимата</div>
+                  <div class="card__date">18:30, Сегодня</div>
+                </div>
+              </div>
+              <div class="card__body">
+                  <div class="card__text">Установлен климатический режим «Фиджи»</div>
+                  <div class="card__optional">
+                    <div class="status">
+                      <div class="status__item">
+                        <div class="status__name">Температура:</div>
+                        <div class="status__value">24 C</div>
+                      </div>
+                      <div class="status__item">
+                        <div class="status__name">Влажность:</div>
+                        <div class="status__value">80%</div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card card_size_m card_type_critical">
+            <div class="card__close">
+              <img src="images/icons/cross-white.svg" alt="">
+            </div>
+            <div class="card__open">
+              <img src="images/icons/next.svg" alt="">
+            </div>
+            <div class="card__head">
+              <div class="card__title">
+                <div class="card__icon">
+                  <img src="images/icons/air-conditioner.svg" alt="Климат">
+                </div>
+                <div class="card__name">Невозможно включить кондиционер</div>
+              </div>
+              <div class="card__info">
+                <div class="card__device">Кондиционер</div>
+                <div class="card__date">18:21, Сегодня</div>
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="card__text">В комнате открыто окно, закройте его и повторите попытку</div>
+            </div>
+          </div>
+          <div class="card card_size_m">
+            <div class="card__close">
+              <img src="images/icons/cross.svg" alt="">
+            </div>
+            <div class="card__open">
+              <img src="images/icons/next.svg" alt="">
+            </div>
+            <div class="card__head">
+              <div class="card__title">
+                <div class="card__icon">
+                  <img src="images/icons/music.svg" alt="Музыка">
+                </div>
+                <div class="card__name">Музыка включена</div>
+              </div>
+              <div class="card__info">
+                <div class="card__device">Яндекс.Станция</div>
+                <div class="card__date">18:16, Сегодня</div>
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="card__text">Сейчас проигрывается:</div>
+              <div class="card__optional">
+                <div class="music">
+                  <div class="music__play">
+                    <div class="music__cover">
+                      <img src="images/album-cover.png" alt="Музыка">
+                    </div>
+                    <div class="music__name">Florence & The Machine - Big God</div>
+                    <div class="music__track">
+                      <input type="range" min="0" max="100" value="25">
+                      <div class="music__time">4:31</div>
+                    </div>
+                  </div>
+                  <div class="music__action">
+                    <div>
+                      <img class="prev" src="images/icons/Prev.svg" alt="">
+                      <img class="next" src="images/icons/Prev.svg" alt="">
+                    </div>
+                    <div class="music__volume">
+                      <input type="range" oninput="changeVolume(this.value)" min="0" max="100" value="80">
+                      <div class="music__value">80%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card_size_m">
+            <div class="card__close">
+              <img src="images/icons/cross.svg" alt="">
+            </div>
+            <div class="card__open">
+              <img src="images/icons/next.svg" alt="">
+            </div>
+            <div class="card__head">
+              <div class="card__title">
+                <div class="card__icon">
+                  <img src="images/icons/fridge.svg" alt="Холодильник">
+                </div>
+                <div class="card__name">Заканчивается молоко</div>
+              </div>
+              <div class="card__info">
+                <div class="card__device">Холодильник</div>
+                <div class="card__date">17:23, Сегодня</div>
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="card__text">Кажется, в холодильнике заканчивается молоко. Вы хотите добавить его в список покупок?</div>
+              <div class="card__optional">
+                <div class="button-panel">
+                  <button class="button button_size_m button_type_agree">Да</button>
+                  <button class="button button_size_m">Нет</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card_size_s">
+            <div class="card__close">
+              <img src="images/icons/cross.svg" alt="">
+            </div>
+            <div class="card__open">
+              <img src="images/icons/next.svg" alt="">
+            </div>
+            <div class="card__head">
+              <div class="card__title">
+                <div class="card__icon">
+                  <img src="images/icons/battery.svg" alt="Батарея">
+                </div>
+                <div class="card__name">Зарядка завершена</div>
+              </div>
+              <div class="card__info">
+                <div class="card__device">Окнонный сенсор</div>
+                <div class="card__date">16:22, Сегодня</div>
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="card__text">Ура! Устройство «Оконный
+                  сенсор» снова в строю!</div>
+            </div>
+          </div>
+          <div class="card card_size_l card_type_critical">
+            <div class="card__close">
+              <img src="images/icons/cross-white.svg" alt="">
+            </div>
+            <div class="card__open">
+              <img src="images/icons/next.svg" alt="">
+            </div>
+            <div class="card__head">
+              <div class="card__title">
+                <div class="card__icon">
+                  <img src="images/icons/cam-white.svg" alt="Батарея">
+                </div>
+                <div class="card__name">Пылесос застрял</div>
+              </div>
+              <div class="card__info">
+                <div class="card__device">Сенсор движения</div>
+                <div class="card__date">16:20, Сегодня</div>
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="card__text">Робопылесос не смог сменить свое местоположение
+                  в течение последних 3 минут. Похоже, ему нужна
+                  помощь.
+              </div>
+              <div class="card__optional">
+                <img class="large-picture" src="images/photo.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="card card_size_s">
+            <div class="card__close">
+              <img src="images/icons/cross.svg" alt="">
+            </div>
+            <div class="card__open">
+              <img src="images/icons/next.svg" alt="">
+            </div>
+            <div class="card__head">
+              <div class="card__title">
+                <div class="card__icon">
+                  <img src="images/icons/kettle.svg" alt="Чайник">
+                </div>
+                <div class="card__name">Вода вскипела</div>
+              </div>
+              <div class="card__info">
+                <div class="card__device">Чайник</div>
+                <div class="card__date">16:17, Сегодня</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__list">
+          <a href="#" class="footer__link">Помощь</a>
+          <a href="#" class="footer__link">Обратная связь</a>
+          <a href="#" class="footer__link">Разработчикам</a>
+          <a href="#" class="footer__link">Условия использования</a>
+          <a href="license.pdf" class="footer__link">Авторские права</a>
+        </div>
+        <label class="footer__copy">© 2001–2017  ООО «Яндекс»</label>
+      </footer>
+    </div>
+  </div>
+  </body>
+</html>
