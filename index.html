@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/card.css"/>
     <link rel="stylesheet" href="css/button.css"/>
     <link rel="stylesheet" href="css/music.css"/>
+    <link rel="stylesheet" href="css/scroll-bar.css"/>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
     <script src="js/index.js"></script>
     <title>Яндекс Дом</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
@@ -312,8 +314,21 @@
                   в течение последних 3 минут. Похоже, ему нужна
                   помощь.
               </div>
-              <div class="card__optional">
-                <img class="large-picture" src="images/photo.jpg" alt="">
+              <div class="card__optional for-zoom">
+                <img draggable="false" touch-action="none" class="large-picture active__picture" src="images/photo.jpg" alt="">
+              </div>
+              <div class="scroll-bar__container">
+                <input id="scrollbar" type="range" class="scroll-bar" disabled>
+              </div>
+              <div class="status status__camera">
+                <div class="status__item">
+                  <div class="status__name">Приблежение:</div>
+                  <div id="zoom" class="status__value">100%</div>
+                </div>
+                <div class="status__item">
+                  <div class="status__name">Яркость:</div>
+                  <div id="bright" class="status__value">100%</div>
+                </div>
               </div>
             </div>
           </div>

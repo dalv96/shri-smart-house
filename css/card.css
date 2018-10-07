@@ -20,6 +20,7 @@
 }
 
 .card__open {
+  z-index: 1;
   cursor: pointer;
   position: absolute;
   transition: 0.3s ease;
@@ -136,11 +137,19 @@
   margin-top: 25px;
 }
 
+.for-zoom {
+  overflow: hidden;
+}
+
+.active__picture {
+  transform: scale(2) translateX(0);
+}
+
 .large-picture {
   width: 100%;
   border-radius: 20px;
-
-  background: none;
+  z-index: 0;
+  background-position-x: 10px;
 }
 
 .card_type_critical  {
@@ -181,6 +190,14 @@
   font-weight: bold;
 }
 
+.status__camera {
+  display: none;
+}
+
+.status__camera .status__value {
+  font-weight: normal;
+}
+
 @media all and (max-width: 1050px) {
   .card_size_l {
     grid-column: span 6;
@@ -217,6 +234,15 @@
     font-size: 14px;    
   }
 
+  .status__camera {
+    display: inherit;
+    margin-top: 0;
+  }
+  
+  .status__item:last-child {
+    text-align: right;
+  }
+  
   .card__name {
     font-size: 14px;
   }

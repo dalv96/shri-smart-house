@@ -74,7 +74,6 @@
 
 .music input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-
 }
 
 .music input[type=range]:focus {

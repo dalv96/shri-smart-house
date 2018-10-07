@@ -1,0 +1,115 @@
+:root {
+  --thumb-width: 100%;
+}
+
+.scroll-bar__container {
+  position: relative;
+  top: -25px;
+  margin: 0 10px;
+}
+
+.scroll-bar {
+  width: 100%;
+  visibility: hidden;
+}
+
+.scroll-bar__container input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+.scroll-bar__container input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.scroll-bar__container input[type=range]:focus {
+  outline: none;
+}
+
+.scroll-bar__container input[type=range]::-moz-focus-outer {
+  border: none;
+}
+
+.scroll-bar__container input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+.scroll-bar__container input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -9px;
+  height: 10px;
+  width: var(--thumb-width);
+  border: none;
+  border-radius: 4.5px;
+  background: #000;
+  cursor: pointer;
+}
+
+.scroll-bar__container input[type=range]::-moz-range-thumb {
+  margin-top: -9px;
+  height: 10px;
+  width: var(--thumb-width);  
+  border: none;
+  border-radius: 4.5px;
+  background: #000;
+  cursor: pointer;
+}
+
+.scroll-bar__container input[type=range]::-ms-thumb {
+  margin-top: -9px;
+  height: 10px;
+  width: var(--thumb-width);
+  border: none;
+  border-radius: 4.5px;
+  background: #000;
+  cursor: pointer;
+}
+
+.scroll-bar__container input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: none;
+}
+
+.scroll-bar__container input[type=range]:focus::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: none;
+}
+
+.scroll-bar__container input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: none;
+}
+
+.scroll-bar__container input[type=range]::-ms-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  background: none;
+}
+
+.scroll-bar__container input[type=range]::-ms-fill-lower {
+  background: none;
+}
+
+.scroll-bar__container input[type=range]:focus::-ms-fill-lower {
+  background: none;  
+}
+
+.scroll-bar__container input[type=range]::-ms-fill-upper {
+  background: none;  
+}
+
+.scroll-bar__container input[type=range]:focus::-ms-fill-upper {
+  background: none;
+}
