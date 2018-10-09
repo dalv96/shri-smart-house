@@ -137,6 +137,11 @@ window.onload = function () {
     picture.setPointerCapture(event.pointerId);
     removeEvent(event);
   })
+
+  picture.addEventListener('pointercancel', (event) => {
+    picture.setPointerCapture(event.pointerId);
+    removeEvent(event);
+  })
   
   function removeEvent(ev) {
     for (var i = 0; i < eventList.length; i++) {
