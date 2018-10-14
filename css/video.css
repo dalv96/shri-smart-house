@@ -1,6 +1,112 @@
-.video {
-  width: 300px;
-  height: 200px;
+.cams {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  z-index: 1;
+  width: 800px;
+  margin: 20px auto 0 auto;
+}
 
+.cams__control {
+  background: #f3f3f3;
+  z-index: 0;
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  width: 800px;
+  height: auto;
+  margin: -5px auto 0 auto;
+
+  padding: 20px 0;
+  line-height: 53px;
+  
+  transition: all 0.3s;
+}
+
+.cams__control_hidden {
+  margin: -100px auto 0 auto;
+  visibility: hidden;
+}
+
+.cams__control > * {
+  margin-left: 20px;
+}
+
+.cams__control .button {
+  float: right;
+  margin-right: 20px;
+}
+
+.level {
+  display: none;
+  height: 20px;
+  width: 100px;
+
+  background-color: red;
+}
+
+.level__hider {
+  width: 100%;
+  height: 100%;
+
+  float: right;
+
+  background-color: #f3f3f3;;
+}
+
+.level_visible {
+  display: block;
+}
+
+.video {
+  width: 400px;
+  height: 250px;
+  z-index: 2;
+
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.video_opened {
+  z-index: 3;
   background: black;
+}
+
+.control__item {
+  display: inline-block;
+}
+.video_opened:nth-child(1) {
+  transform: translate(50%, 50%) scale(2, 2);
+}
+
+.video_opened:nth-child(2) {
+  transform: translate(-50%, 50%) scale(2, 2);
+}
+.video_opened:nth-child(3) {
+  transform: translate(50%, -50%) scale(2, 2);
+}
+
+.video_opened:nth-child(4) {
+  transform: translate(-50%, -50%) scale(2, 2);
+}
+
+
+@media all and (max-width: 820px) {
+  .cams {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .cams__control {
+    width: 100vw;
+  }
+
+  .cams__control .button {
+    float: none;
+  }
+
+  .video {
+    width: 100%;
+    height: 150px;
+  }
 }

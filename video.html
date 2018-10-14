@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/video.css"/>
     <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/button.css"/>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script src="js/video.js"></script>
     <title>Яндекс Дом</title>
@@ -41,16 +42,40 @@
         </div>
       </div>
 
-      <aside>
-        <video id="video-1" class="video" muted autoplay></video>
-        <video id="video-2" class="video" muted autoplay></video>
-        <br>
-        <video id="video-3" class="video" muted autoplay></video>
-        <video id="video-4" class="video" muted autoplay></video>
+      <aside class="video-content">
+        <div class="cams">
+          <video id="video-1" onclick="openVideo(this)" class="video" playsinline muted autoplay></video>
+          <video id="video-2" onclick="openVideo(this)" class="video" playsinline muted autoplay></video>
+          <video id="video-3" onclick="openVideo(this)" class="video" playsinline muted autoplay></video>
+          <video id="video-4" onclick="openVideo(this)" class="video" playsinline muted autoplay></video>
+        </div>
+        <div class="cams__control cams__control_hidden">
+          <div class="level" id="level-video-1">
+            <div class="level__hider"></div>
+          </div>
+          <div class="level" id="level-video-2">
+            <div class="level__hider"></div>
+          </div>
+          <div class="level" id="level-video-3">
+            <div class="level__hider"></div>
+          </div>
+          <div class="level" id="level-video-4">
+            <div class="level__hider"></div>
+          </div>
+          <div class="control__item">
+            <label for="">Яркость:</label>
+            <input class="bright" oninput="changeBright(this.value)" type="range" name="bright" value="25">    
+          </div>
+          <div class="control__item">
+            <label for="">Контраст:</label>
+            <input class="contrast" oninput="changeContrast(this.value)" type="range" name="contrast" value="25">    
+          </div>
+          <div class="control__item">
+            <button class="button button_size_m" onclick="closeVideo()">Все камеры</button>
+          </div>
+        </div>
+  
       </aside>
-
-
-
     </div>
   </body>
 </html>
