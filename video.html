@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/video.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="js/video.js"></script>
+    <title>Яндекс Дом</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Яндекс Дом">
+        </div>
+        <nav class="navigator">
+          <a href="index.html" class="navigator__link">Сводка</a>
+          <a href="#" class="navigator__link">Устройства</a>
+          <a href="#" class="navigator__link">Сценарии</a>
+          <a href="video.html" class="navigator__link navigator__link_active">Видеонаблюдение</a>
+        </nav>
+        <div class="menu">
+          <input id="switcher" type="checkbox">
+          <label class="burger" for="switcher">
+            <label for="switcher" class="burger__item"></label>
+            <label for="switcher" class="burger__item"></label>
+            <label for="switcher" class="burger__item"></label>
+          </label>
+          <nav class="list">
+            <a href="index.html" class="list__link">Сводка</a>
+            <a href="#" class="list__link">Устройства</a>
+            <a href="#" class="list__link">Сценарии</a>
+            <a href="video.html" class="list__link">Видеонаблюдение</a>
+          </nav>
+        </div>
+      </div>
+
+      <aside>
+        <video id="video-1" class="video" muted autoplay></video>
+        <video id="video-2" class="video" muted autoplay></video>
+        <br>
+        <video id="video-3" class="video" muted autoplay></video>
+        <video id="video-4" class="video" muted autoplay></video>
+      </aside>
+
+
+
+    </div>
+  </body>
+</html>
