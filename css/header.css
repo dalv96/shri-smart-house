@@ -122,7 +122,7 @@
   opacity: 1;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 650px) {
   .logo {
     height: 75px;
     margin: 0 20px 0 20px;

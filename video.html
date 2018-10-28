@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/video.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/button.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="js/video.js"></script>
+    <title>Яндекс Дом</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Яндекс Дом">
+        </div>
+        <nav class="navigator">
+          <a href="index.html" class="navigator__link">Сводка</a>
+          <a href="#" class="navigator__link">Устройства</a>
+          <a href="#" class="navigator__link">Сценарии</a>
+          <a href="video.html" class="navigator__link navigator__link_active">Видеонаблюдение</a>
+        </nav>
+        <div class="menu">
+          <input id="switcher" type="checkbox">
+          <label class="burger" for="switcher">
+            <label for="switcher" class="burger__item"></label>
+            <label for="switcher" class="burger__item"></label>
+            <label for="switcher" class="burger__item"></label>
+          </label>
+          <nav class="list">
+            <a href="index.html" class="list__link">Сводка</a>
+            <a href="#" class="list__link">Устройства</a>
+            <a href="#" class="list__link">Сценарии</a>
+            <a href="video.html" class="list__link">Видеонаблюдение</a>
+          </nav>
+        </div>
+      </div>
+
+      <aside class="video-content">
+        <div class="cams">
+          <video id="video-1" onclick="openVideo(this)" class="video" playsinline muted autoplay></video>
+          <video id="video-2" onclick="openVideo(this)" class="video" playsinline muted autoplay></video>
+          <video id="video-3" onclick="openVideo(this)" class="video" playsinline muted autoplay></video>
+          <video id="video-4" onclick="openVideo(this)" class="video" playsinline muted autoplay></video>
+        </div>
+        <div class="cams__control cams__control_hidden">
+          <div class="control__item">
+            <label for="">Яркость:</label>
+            <input class="bright"  type="range" name="bright" value="25">    
+          </div>
+          <div class="control__item">
+            <label for="">Контраст:</label>
+            <input class="contrast" type="range" name="contrast" value="25">    
+          </div>
+          <div class="control__item">
+            <button class="button button_size_m" onclick="closeVideo()">Все камеры</button>
+          </div>
+        </div>
+  
+      </aside>
+    </div>
+  </body>
+</html>

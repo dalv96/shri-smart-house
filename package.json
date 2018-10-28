@@ -1,0 +1,31 @@
+{
+  "name": "shri-2018-2-multimedia-homework",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "murphy": "murphy",
+    "http-server": "http-server -p 3102 --cors",
+    "start": "run-p http-server murphy",
+    "tsc": "./node_modules/.bin/tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mad-gooze/shri-2018-2-multimedia-homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mad-gooze/shri-2018-2-multimedia-homework/issues"
+  },
+  "homepage": "https://github.com/mad-gooze/shri-2018-2-multimedia-homework#readme",
+  "dependencies": {
+    "@types/hls.js": "^0.10.2",
+    "@videojs/murphy": "^0.1.1",
+    "http-server": "^0.11.1",
+    "npm-run-all": "^4.1.3"
+  },
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.3"
+  }
+}
